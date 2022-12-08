@@ -148,9 +148,14 @@ h4{
     position: relative;
     margin: auto;
     top: 20%;
-    width: 300px;
+    width: 310px;
     padding: 20px;
 }
+
+.forgotpassword h1{
+    font-size: 29px;
+}
+
 .forgotpassword .label{
     text-align: left;
     margin: 10px 0px 10px 0px;
@@ -168,12 +173,10 @@ h4{
     border-color: rgb(191, 191, 191);
     border-width: 1px;
     padding: 10px;
-    width: 280px;
+    width: 300px;
 }
 
 .yesbutton{
-    display: flex;
-    justify-content: center;
     margin: auto;
     margin-top: 30px;
     width: 20px;
@@ -390,27 +393,30 @@ form .inputText{
 
 .banner1{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding: 54px;
     margin: auto;
     margin-top: 157px;
-    width: 1678px;
-    height: 564px;
+    /* width: 1678px; */
+    min-width: 800px;
+    width: 90%;
+    /* height: 564px; */
     background: #191919;
     border-radius: 24px;
     box-sizing: border-box;
 }
 
 .banner1 .title{
-    width: 777px;
-    height: 177px;
+    margin-bottom:20px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
     font-size: 64px;
     line-height: 78px;
     color: #DC5F00;
+    
 }
 
 .banner1 .subtitle{
@@ -492,6 +498,7 @@ form .inputText{
 }
 
 .hotestmenu{
+    min-width: 800px;
     box-sizing: border-box;
     margin: auto;
     display: flex;
@@ -499,7 +506,8 @@ form .inputText{
     flex-wrap: wrap;
     align-items: center;
     padding: 48px;
-    width: 1336px;
+    /* width: 1336px; */
+    width: 75%;
     background: rgba(220, 95, 0, 0.15);
     box-shadow: 0px 20px 40px rgba(220, 95, 0, 0.2);
     border-radius: 24px;
