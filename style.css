@@ -298,6 +298,7 @@ form .inputText{
     font-size: 20px;
     display: flex;
     justify-content: center;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
 }
 
 .header li{
@@ -374,4 +375,11 @@ form .inputText{
 
 .profile .avatar img{
     border-radius: 50%;
+}
+
+
+.homebackground{
+    background: white;
+    height: 100%;
+    box-sizing: border-box;
 }
