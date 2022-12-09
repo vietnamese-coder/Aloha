@@ -12,10 +12,17 @@
 </head>
 <body>
     <div class="header">
-        <li><a href="home.html">Trang chủ</a></li>
+        <img width="255px" style="margin-left: 20px;" src="./assets/logofull.jpg" alt="">
+        <div style="display:flex">
+        <li><a href="index.html">Trang chủ</a></li>
         <li><a href="">Thực đơn</a></li>
         <li><a href="">Về chúng tôi</a></li>
         <li><a href="">Liên hệ</a></li>
+        </div>
+        <div class="headerright">
+            <a href="profile.html"><img  src="./assets/icon/cart.png" alt=""></a>
+            <a href=""></a><img src="./assets/icon/account.png" alt=""></a>
+        </div>
     </div>
     <div class="profilebackground">
         <div class="profile" style="padding-top: 8%;"> 
@@ -34,12 +41,12 @@
             </div>
             <div class="avatar">
                 <img width="250px" height="250px" src="assets/profile picture.jpg" alt=""><br>
-                <div style="text-align: center;"><a  href="">Đổi ảnh đại diện</div></a>
+                <div style="text-align: center; margin: 10px;"><a  href="">Đổi ảnh đại diện</div></a>
             </div>
         </div>
         <div style="display: flex; justify-content: center;">
-            <div class="button1">Lưu </div>
-            <div class="button2">Đăng xuất </div>
+            <div class="button1" onClick="window.location='index.html'" >Lưu </div>
+            <div class="button2" onClick="window.location='login.html'">Đăng xuất </div>
         </div>
     </div>
 </body>
