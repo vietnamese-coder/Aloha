@@ -29,6 +29,7 @@ body, html{
     padding: 10px;
     width: 350px;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap');
 .forminput h1{
     text-align: center;
@@ -206,30 +207,29 @@ h4{
         left: 43%;
     }
   }
-
-.svg-right-corner{
+.svg-right-corner, .svg-left-corner, .svg-left-top-corner, .svg-right-bot-corner{
     position: absolute;
-    top: 0;
-    right: 0px;
 }
 
-.svg-left-corner{
-    position: absolute;
-    left: 0;
-    bottom: 0;
-}
+    .svg-right-corner{
+        top: 0;
+        right: 0px;
+    }
 
-.svg-left-top-corner{
-    position: absolute;
-    top: 0;
-    left: 0px;
-}
+    .svg-left-corner{
+        left: 0;
+        bottom: 0;
+    }
 
-.svg-right-bot-corner{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
+    .svg-left-top-corner{
+        top: 0;
+        left: 0px;
+    }
+
+    .svg-right-bot-corner{
+        right: 0;
+        bottom: 0;
+    }
 
 
 /* register */
@@ -260,7 +260,6 @@ h4{
 
 
 .form h1{
-    
     text-align: center;
     font-style: normal;
     font-weight: 700;
@@ -394,7 +393,6 @@ form .inputText{
     border-radius: 50%;
 }
 
-
 .homebackground{
     background: white;
     height: 100%;
@@ -456,7 +454,7 @@ form .inputText{
     color: #FFFFFF;
 }
 
-.banner1 .buttonBanner1{
+.banner1 .buttonBanner1, .buttonBanner2{
     margin: 20px;
     margin-left: 0;
     width: 226px;
@@ -464,33 +462,25 @@ form .inputText{
     color: white;
     text-align: center;
     line-height: 52px;
-    background: #CF0A0A;
-    box-shadow: 2px 2px 4px #FFFFFF;
     border-radius: 4px;
-}
+    
+    }
+    .banner1 .buttonBanner1{
+        background: #CF0A0A;
+        box-shadow: 2px 2px 4px #FFFFFF;   
+    }
+        .banner1 .buttonBanner1:hover{
+            background: #ee3a3a;
+            cursor: pointer;
+        }
 
-.banner1 .buttonBanner1:hover{
-    background: #ee3a3a;
-    cursor: pointer;
-}
-
-.banner1 .buttonBanner2{
-    margin: 20px;
-    margin-left: 0;
-    width: 226px;
-    height: 52px;
-    color: white;
-    text-align: center;
-    line-height: 52px;
-    border: 1px solid #FFFFFF;
-    border-radius: 4px;
-    border-radius: 4px;
-}
-
-.banner1 .buttonBanner2:hover{
-    opacity: 0.5;
-    cursor: pointer;
-}
+    .banner1 .buttonBanner2{
+        border: 1px solid #FFFFFF;
+    }
+        .banner1 .buttonBanner2:hover{
+            opacity: 0.5;
+            cursor: pointer;
+        }
 
 
 .hotest{
@@ -517,7 +507,7 @@ form .inputText{
     flex-wrap: wrap;
     align-items: center;
     padding: 48px;
-    width: 75%;
+    width: 1336px;
     background: rgba(220, 95, 0, 0.15);
     box-shadow: 0px 20px 40px rgba(220, 95, 0, 0.2);
     border-radius: 24px;
@@ -538,52 +528,50 @@ form .inputText{
     opacity: 0.7;
 }
 
-.hotestmenu .foodproduct .foodname {
+.hotestmenu .foodproduct .foodname, 
+.hotestmenu .foodproduct .foodprice{
     text-align: center;
-    margin-top: 10px;
+    margin: auto;
+    margin-top: 20px;
     font-size: 20px;
     line-height: 24px;
     color: #000000;
+    width: 235px; 
+}
+
+.hotestmenu .foodproduct .foodprice{
+    margin-top: 12px;
 }
 
 .hotestmenu .foodproduct .foodprice {
-    text-align: center;
-    margin-top: 10px;
-    font-size: 20px;
-    line-height: 24px;
     color: rgba(220, 95, 0, 0.7);
 }
 
-.hotestmenu .foodproduct .buybutton {
-    margin-top: 10px;
+.hotestmenu .foodproduct .buybutton, .hotestmenu .foodproduct .addcartbutton  {
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: 20px;
     padding: 7px;
-    color: white;
     text-align: center;
-    background: #CF0A0A;
+    width: 234px;
     border-radius: 4px;
+    color: white;
+    background: #CF0A0A;
 }
 
-
-.hotestmenu .foodproduct .buybutton:hover{
-    opacity: 0.7;
-    cursor: pointer;
-}
-
-.hotestmenu .foodproduct .cartbutton {
+.hotestmenu .foodproduct .addcartbutton {
     margin-top: 10px;
-    padding: 7px;
     color: rgb(0, 0, 0);
-    text-align: center;
     background: #ffffff;
     border: 0.5px solid #7E7E7E;
-    border-radius: 4px;
 }
 
-
-.hotestmenu .foodproduct .cartbutton:hover{
+.hotestmenu .foodproduct .buybutton:hover, 
+.hotestmenu .foodproduct .addcartbutton:hover{
     opacity: 0.7;
     cursor: pointer;
 }
+
 
 
 .servicessection h2{
@@ -622,7 +610,6 @@ form .inputText{
     height: 200px;
 }
 
-
 .services .servicescontent{
     text-align: center;
     margin: auto;
@@ -631,15 +618,14 @@ form .inputText{
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
-    color: #000000;
+    color: #191919;
 }
-
 
 .footer{
     box-sizing: border-box;
     position: relative;
     bottom: 0;
-    height: 488px;
+    height: 509px;
     width: 100%;
     min-width: 800px;
     background: #191919;
@@ -730,5 +716,125 @@ form .inputText{
     height: 50px;
     padding-left: 50px;
 }
+
+.cart{
+    margin: auto;
+    padding: 24px;
+    width: 513px;
+    height: 625px;
+    background: #FEFEFE;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.25);
+    border-radius: 24px;
+    box-sizing: border-box;
+}
+
+.foodcart{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.foodcart img{
+    width: 100px;
+    height: 100px;
+    border-radius: 24px;
+}
+
+.foodcart .foodcartname{
+    box-sizing: border-box;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    height: 100px;
+    margin-left: 24px;
+    margin-right: 121px;
+    font-size: 16px;
+}
+
+.foodcart .adjust{
+    margin-top: 24.5px;
+}
+
+.foodcart .adjust .number{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    margin-left: 12px;
+    margin-right: 12px;
+    color: #DC5F00;
+
+}
+.foodcart .adjust img{
+    width: 23px;
+    height: 23px;
+}
+
+.foodcart .adjust img:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.foodcart .adjust .price{
+    margin: auto;
+    text-align: center;
+    margin-top: 12.5px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #DC5F00;
+}
+
+.pricetotal{
+    margin: auto;
+    margin-top: 28px;
+    margin-bottom: 29px;
+    width: 513px;
+    text-align: right;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.cartbutton{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 513px;
+}
+
+.cartbutton .cartbtn1, .cartbtn2{ 
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 236px;
+    height: 44px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #EEEEEE;
+    background: #CF0A0A;
+    border-radius: 4px;
+}
+
+.cartbutton .cartbtn2{
+    color: #191919;;
+    background: #FFFFFF;
+    border: 0.5px solid #7E7E7E;
+}
+
+.cartbutton .cartbtn1:hover, .cartbtn2:hover{ 
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.cartbutton .cartbtn1 img, .cartbtn2 img{
+    margin-right: 10px;
+}
+
+
+
+
 
 
