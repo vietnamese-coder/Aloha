@@ -530,8 +530,12 @@ form .inputText{
 .hotestmenu .foodproduct img{
     border-radius: 20px;
     width: 265px;
-    height: 265px;
-    
+    height: 265px; 
+}
+
+.hotestmenu .foodproduct img:hover{
+    cursor: pointer;
+    opacity: 0.7;
 }
 
 .hotestmenu .foodproduct .foodname {
@@ -690,6 +694,11 @@ form .inputText{
     width: 52px;
     margin: 20px;
     margin-top: 40px;
+}
+
+.footer .socialicon img:hover{
+    cursor: pointer;
+    opacity: 0.5;
 }
 
 .footer .copyright{
