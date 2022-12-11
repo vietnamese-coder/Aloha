@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 body, html{
     margin: 0px;
     font-family: 'Montserrat', sans-serif;
 }
-
 @media (-webkit-device-pixel-ratio: 1.25) {
     *{
       zoom: 0.96;
@@ -236,8 +237,6 @@ h4{
         right: 0;
         bottom: 0;
     }
-
-
 /* register */
 .backgroundregister{
     background-image: linear-gradient(to right, rgba(232, 232, 232, 0.1), rgba(201, 203, 205, 0.2)), url('./assets/AnhDangKy.jpg');
@@ -245,8 +244,6 @@ h4{
     height: 100%;
     background-repeat: no-repeat;
 }
-
-
 .forminputregister{
     position: absolute;
     padding-top: 50px;
@@ -255,7 +252,6 @@ h4{
     height: 100%;
     box-sizing: border-box;
 }
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 .form{
     font-family: 'Montserrat', sans-serif;
     position: relative;
@@ -305,7 +301,14 @@ form .inputText{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
     z-index: 100;
 }
-
+.logo-main{
+    margin-top: 16px;
+    margin-left: 32px;
+    filter: drop-shadow(0px 10px 5px rgba(0, 0, 0, 0.75));
+}
+.logo-main img{
+    width: 190px;
+}
 .header li{
     padding: 5px;
     height: 40px;
@@ -316,10 +319,12 @@ form .inputText{
 }
 
 .header li a{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23px;
     text-decoration: none;
-    font-size: 21px;
     color: black;
-    line-height: 73.6px;
+    line-height: 69.6px;
 }
 
 .headerright {
@@ -524,6 +529,7 @@ form .inputText{
     border-radius: 20px;
     width: 265px;
     height: 265px; 
+    object-fit: cover;
 }
 
 .hotestmenu .foodproduct img:hover{
@@ -692,7 +698,7 @@ form .inputText{
 
 .footer .copyright{
     position: absolute;
-    left: 2%;
+    left: 5.19%;
     bottom: 5%;
     font-weight: lighter;
     font-size: 13px;
@@ -738,6 +744,7 @@ form .inputText{
 }
 
 .foodcart img{
+    object-fit: cover;
     width: 100px;
     height: 100px;
     border-radius: 24px;
@@ -839,16 +846,14 @@ form .inputText{
 
 .paymenttitle{
     position: absolute;
-    left: 517px;
+    left: 465px;
     top: 267px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
     font-size: 40px;
     line-height: 49px;
-    /* identical to box height */
     letter-spacing: 0.01em;
-
     color: #191919;
 }
 
@@ -886,8 +891,7 @@ form .inputText{
 
 .thankyou{
     margin: auto;
-    width: 493px;
-    
+    width: 493px; 
     margin-bottom: 352px;
 }
 
@@ -944,12 +948,10 @@ form .inputText{
     background: #CF0A0A;
     color: #FFFFFF;
 }
-
 .thankyou-btn2{
     background: #FFFFFF;   
     color: #7E7E7E;   
 }
-
 
 .map{
     margin: auto;
@@ -1001,6 +1003,120 @@ form .inputText{
     border: 0.5px solid #7E7E7E;
     border-radius: 8px;
 }
+
+.about-image{ 
+    background-image: url('./assets/AnhBiaGioiThieu.jpg');
+    background-size: 100% 100%;
+    box-sizing: border-box;
+    margin: auto;
+    height: 727px;
+    width: 1720px;
+}
+
+
+.about-heading{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+    color: rgba(220, 95, 0, 0.5);
+    margin-top: 40px;
+    text-align: center;
+}
+
+.about-text{
+    margin: auto;
+    margin-top: 8px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    width: 1108px;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 30px;
+    color: #000000;
+    text-align: justify;
+}
+
+.about-people-section{
+    width: 1352px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.about-people{
+    box-sizing: border-box;
+    width: 308px;
+    margin-top: 40px;
+    margin-bottom: 120px;
+    padding-top: 65.98px;
+    height: 443.64px;
+    background: rgba(207, 10, 10, 0.05);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.19);
+    border-radius: 40.7947px;
+}
+
+.about-people:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+.about-people img{
+    border-radius: 50%;
+    margin-left: 72px;
+    width:  164px;
+    height: 164px;
+    object-fit: cover;
+}
+
+.about-people-name{
+    margin-top: 16px;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #191919;
+}
+
+.about-people-quote{
+    margin-top: 12px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    color: #000000;
+}
+
+.about-people-role{
+    margin-top: 27.96px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #DC5F00;
+    text-align: center;
+}
+
+.about-partner{
+    margin: auto;
+    margin-top: 33px;
+    margin-bottom: 160px;
+    display: flex;
+    width: 1174px;
+    justify-content: space-between;
+}
+
+.about-partner img{
+    width: 169px;
+    height: 169px;
+}
+
 
 
 
