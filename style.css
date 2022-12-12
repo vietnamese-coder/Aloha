@@ -804,6 +804,7 @@ form .inputText{
     color: #EEEEEE;
     background: #CF0A0A;
     border-radius: 4px;
+    margin-top: -23px;
 }
 
 .cartbutton .cartbtn2{
@@ -824,8 +825,8 @@ form .inputText{
 
 .paymenttitle{
     position: absolute;
-    left: 465px;
-    top: 267px;
+    left: 481px;
+    top: 190px;
     font-style: normal;
     font-weight: 600;
     font-size: 40px;
@@ -837,7 +838,7 @@ form .inputText{
 .paymentform{
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
+    margin: -73px auto auto auto;
     padding: 24px;
     width: 934px;
     height: 416.5px;
